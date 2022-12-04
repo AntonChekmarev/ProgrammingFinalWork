@@ -20,8 +20,8 @@ namespace FinalWork
 
                     string[] newArray = array.Where(a => (a.Length <= 3 && a != string.Empty)).ToArray(); // новый массив строк с выборкой элементов из изначального массива
 
-
-
+                    Console.WriteLine();
+                    Console.WriteLine("Результирующий массив: " + (newArray.Length > 0 ? String.Join(",", newArray) : "нет элементов, удовлетворяющих выборке!")); // вывод нового массива
                 } while (CKey() != ConsoleKey.Escape);
             }
             catch (Exception e)
