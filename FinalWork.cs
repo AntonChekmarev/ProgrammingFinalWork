@@ -18,7 +18,7 @@ namespace FinalWork
                     Console.Write("Введите элементы массива: ");
                     string[] array = Console.ReadLine()!.Split(","); // ввод пользователем массива строк
 
-
+                    string[] newArray = array.Where(a => (a.Length <= 3 && a != string.Empty)).ToArray(); // новый массив строк с выборкой элементов из изначального массива
 
 
 
